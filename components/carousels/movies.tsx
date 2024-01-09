@@ -12,7 +12,7 @@ export default function MoviesCarousel({ title, movies, vertical }: Props) {
     : movies.map((movie) => <MovieImage key={movie.id} movie={movie} />)
 
   return (
-    <section className="z-50">
+    <section className="z-40">
       <h2 className="px-10 py-2 text-xl font-bold">{title}</h2>
       <div
         className={cn(
@@ -34,7 +34,7 @@ function MovieImage({ movie }: { movie: Movie }) {
       <p className="absolute bottom-5 left-5 z-20">{movie.title}</p>
 
       <Image
-        className="h-56 w-fit object-cover object-center shadow-md shadow-gray-900 drop-shadow-xl lg:min-w-[400px]"
+        className="h-44 w-fit object-cover object-center shadow-md shadow-gray-900 drop-shadow-xl lg:min-w-[380px]"
         src={getImagePath(movie.backdrop_path || movie.poster_path)}
         key={movie.id}
         alt={movie.title}

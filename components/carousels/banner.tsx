@@ -5,12 +5,13 @@ import { Movie } from "@/typings"
 import Autoplay from "embla-carousel-autoplay"
 import useEmblaCarousel from "embla-carousel-react"
 
+import { getImagePath } from "@/lib/api/movies"
+
 // ⭐️ Embla Carousel is a library agnostic, dependency free and lightweight
 // carousel library. It aims to solve the hardest technical challenges with
 // building carousels, and the rest is up to the user utilizing its highly
 // extensible API and plugins. Embla Carousel works in all modern browsers.
 // https://www.embla-carousel.com/get-started/react/
-import { getImagePath } from "@/lib/api/movies"
 
 Autoplay.globalOptions = { delay: 8000 }
 
