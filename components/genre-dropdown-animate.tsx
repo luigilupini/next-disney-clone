@@ -20,7 +20,7 @@ export default function DropdownWrapper({
   const [isOpen, setIsOpen] = useState(false)
   return (
     <DropdownMenu onOpenChange={(open) => setIsOpen(open)}>
-      <DropdownMenuTrigger className="flex items-center justify-center rounded-md border px-2">
+      <DropdownMenuTrigger className="flex items-center justify-center rounded-md border bg-background px-2">
         <span className="text-sm">Genre</span>
         <ChevronDown
           className={cn(

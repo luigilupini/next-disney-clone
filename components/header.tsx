@@ -9,7 +9,7 @@ import ThemeToggle from "@/components/theme-toggler"
 // ⭐️ Change between sticky and fixed properties in testing
 export default function Header() {
   return (
-    <header className="fixed top-0 z-20 flex w-full items-center justify-between border-b bg-gradient-to-t from-gray-200/0 via-gray-900/25 to-gray-900 p-5">
+    <header className="fixed top-0 z-20 flex w-full items-center justify-between bg-gradient-to-t from-gray-200/0 via-gray-900/25 to-gray-900 p-5 backdrop-blur-sm">
       <Link href="/" className="mr-10">
         <Image
           src="/logo.png"

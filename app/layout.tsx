@@ -4,7 +4,7 @@ import ProviderTree from "@/context/provider-tree"
 
 import Header from "@/components/header"
 
-import "./globals.css"
+import "@/styles/globals.css"
 
 const font = Karla({ subsets: ["latin"] })
 
