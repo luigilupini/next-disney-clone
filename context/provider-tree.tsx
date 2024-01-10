@@ -9,8 +9,8 @@ const ProviderTree = ({ children }: PropsWithChildren) => {
   return (
     <ThemeProvider
       attribute="class"
-      defaultTheme="system"
-      enableSystem
+      defaultTheme="dark"
+      // enableSystem
       disableTransitionOnChange // ⭐️ A blur from dark to light mode
     >
       {children}

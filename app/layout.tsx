@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${font.className} bg-white dark:bg-[#1A1C29]`}>
+      <body className={`${font.className} dark:bg-[#1A1C29]`}>
         <ProviderTree>
           <Header />
           {children}

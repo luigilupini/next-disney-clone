@@ -3,7 +3,6 @@ import Link from "next/link"
 
 import GenreDropdown from "@/components/genre-dropdown"
 import SearchInput from "@/components/search-input"
-import ThemeToggle from "@/components/theme-toggler"
 
 // ⭐️ Check your HTML that is semantic and accessible
 // ⭐️ Change between sticky and fixed properties in testing
@@ -24,7 +23,7 @@ export default function Header() {
       <div className="flex gap-2">
         <GenreDropdown />
         <SearchInput />
-        <ThemeToggle />
+        {/* <ThemeToggle /> */}
       </div>
     </header>
   )
