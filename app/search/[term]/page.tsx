@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation"
 
 import { getPopular, getSearchMovies } from "@/lib/api/movies"
+import AiSuggestion from "@/components/ai-suggestion"
 import MoviesCarousel from "@/components/carousels/movies"
 
 type Props = {
@@ -22,6 +23,7 @@ export default async function SearchPage({ params: { term } }: Props) {
     <div className="mx-auto max-w-7xl">
       <div className="xl:mt-42 mt-32 flex flex-col space-y-5">
         <h1 className="px-10 text-6xl font-bold">Results for {updateTerm}</h1>
+        <AiSuggestion term={updateTerm} />
         <MoviesCarousel title="Movies" movies={search} vertical />
         <MoviesCarousel title="You may also like" movies={popular} />
       </div>
