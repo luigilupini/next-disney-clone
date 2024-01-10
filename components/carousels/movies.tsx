@@ -29,12 +29,12 @@ export default function MoviesCarousel({ title, movies, vertical }: Props) {
 function MovieImage({ movie }: { movie: Movie }) {
   return (
     <article className="relative shrink-0 transform-gpu cursor-pointer overflow-hidden rounded-md transition-all duration-200 ease-out hover:scale-105 hover:drop-shadow-lg">
-      <div className="absolute inset-0 z-10 bg-gradient-to-b from-gray-200/0 via-gray-900/20 to-gray-300 dark:to-[#1A1C29]/80" />
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-gray-200/0 via-gray-900/20 to-gray-300 shadow-md dark:to-[#1A1C29]/80" />
 
       <p className="absolute bottom-5 left-5 z-20">{movie.title}</p>
 
       <Image
-        className="h-44 w-fit object-cover object-center shadow-md shadow-gray-900 drop-shadow-xl lg:min-w-[380px]"
+        className="h-44 w-fit object-cover object-center lg:min-w-[300px]"
         src={getImagePath(movie.backdrop_path || movie.poster_path)}
         key={movie.id}
         alt={movie.title}

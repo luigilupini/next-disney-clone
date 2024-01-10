@@ -44,13 +44,13 @@ export default function BannerCarousel({ movies }: { movies: Movie[] }) {
               className="w-full object-cover object-center"
               priority
             />
-            <div className="absolute left-0 top-0 z-20 mt-0 hidden h-full w-full space-y-5 bg-transparent bg-gradient-to-r from-gray-900/90 via-transparent to-transparent p-10 pt-40 text-white lg:mt-40 lg:inline xl:pt-52">
-              <h2 className="z-50 max-w-xl text-5xl font-bold">
+            <div className="absolute left-0 top-0 z-20 mt-0 hidden h-full w-full space-y-5 bg-transparent bg-gradient-to-r from-[#1A1C29] via-[#1A1C29]/0 to-[#1A1C29] p-10 pt-40 text-white lg:mt-40 lg:inline xl:pt-52">
+              <h2 className="z-50 max-w-xl text-4xl font-bold">
                 {movie.title}
               </h2>
-              <p className="line-clamp-3 max-w-xl">{movie.overview}</p>
+              <p className="line-clamp-2 max-w-xl">{movie.overview}</p>
             </div>
-            <MaskGradient />
+            <BottomGradient />
           </article>
         ))}
       </div>
@@ -58,6 +58,6 @@ export default function BannerCarousel({ movies }: { movies: Movie[] }) {
   )
 }
 
-const MaskGradient = () => (
-  <div className="absolute inset-0 bg-gradient-to-b from-gray-200/0 via-gray-900/25 to-gray-300 dark:to-[#1A1C29]" />
+const BottomGradient = () => (
+  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#1A1C29]" />
 )
